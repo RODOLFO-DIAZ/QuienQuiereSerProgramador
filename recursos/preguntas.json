@@ -1,0 +1,344 @@
+[
+  {
+    "nivel": 1,
+    "pregunta": "¿Qué función se usa para mostrar texto en la consola?",
+    "codigo": "",
+    "opciones": ["print()", "input()", "show()", "echo()"],
+    "correcta": 0,
+    "pista": "En inglés significa 'imprimir'.",
+    "explicacion": "print() muestra en la consola el valor que recibe entre paréntesis."
+  },
+  {
+    "nivel": 1,
+    "pregunta": "¿Qué tipo de dato es el valor 3.14?",
+    "codigo": "",
+    "opciones": ["int", "float", "str", "bool"],
+    "correcta": 1,
+    "pista": "Tiene parte decimal.",
+    "explicacion": "Los números con parte decimal son de tipo float. Los enteros son int."
+  },
+  {
+    "nivel": 1,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "x = 5\nx = x + 2\nprint(x)",
+    "opciones": ["5", "7", "52", "Error"],
+    "correcta": 1,
+    "pista": "La variable x cambia de valor en la segunda línea.",
+    "explicacion": "Primero x vale 5; luego se le suma 2 y se guarda de nuevo en x, por eso imprime 7."
+  },
+  {
+    "nivel": 1,
+    "pregunta": "¿Qué tipo de dato devuelve siempre la función input()?",
+    "codigo": "",
+    "opciones": ["int", "float", "str", "bool"],
+    "correcta": 2,
+    "pista": "Aunque el usuario escriba un número...",
+    "explicacion": "input() siempre devuelve texto (str). Para usarlo como número hay que convertirlo con int() o float()."
+  },
+  {
+    "nivel": 1,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "print(\"Hola\" + \" \" + \"mundo\")",
+    "opciones": ["Hola mundo", "Holamundo", "\"Hola\" + \"mundo\"", "Error"],
+    "correcta": 0,
+    "pista": "El operador + une textos, incluido el espacio.",
+    "explicacion": "Con textos, el operador + concatena (une). Se unen 'Hola', un espacio y 'mundo'."
+  },
+  {
+    "nivel": 1,
+    "pregunta": "¿Con qué símbolo inicia un comentario de una línea en Python?",
+    "codigo": "",
+    "opciones": ["//", "#", "--", "/*"],
+    "correcta": 1,
+    "pista": "Es el mismo símbolo que se usa en los hashtags.",
+    "explicacion": "En Python los comentarios de una línea empiezan con #. Python ignora todo lo que sigue."
+  },
+  {
+    "nivel": 1,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "print(10 // 3)",
+    "opciones": ["3.33", "3", "1", "4"],
+    "correcta": 1,
+    "pista": "// es la división entera.",
+    "explicacion": "El operador // divide y descarta la parte decimal: 10 // 3 da 3."
+  },
+  {
+    "nivel": 1,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "print(10 % 3)",
+    "opciones": ["3", "1", "0", "3.33"],
+    "correcta": 1,
+    "pista": "% devuelve lo que sobra de una división.",
+    "explicacion": "El operador % (módulo) devuelve el residuo: 10 entre 3 es 3 y sobra 1."
+  },
+  {
+    "nivel": 1,
+    "pregunta": "¿Cuál de estos es un nombre de variable válido?",
+    "codigo": "",
+    "opciones": ["2nombre", "mi-nombre", "mi_nombre", "class"],
+    "correcta": 2,
+    "pista": "No puede empezar con número, usar guiones ni ser una palabra reservada.",
+    "explicacion": "mi_nombre es válido. No se puede empezar con un número, el guion se interpreta como resta y class es palabra reservada."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "numeros = [1, 2, 3]\nprint(numeros[-1])",
+    "opciones": ["1", "3", "-1", "Error"],
+    "correcta": 1,
+    "pista": "Los índices negativos cuentan desde el final.",
+    "explicacion": "El índice -1 apunta al último elemento de la lista, que es 3."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Cuántas veces se imprime \"Hola\"?",
+    "codigo": "for i in range(3):\n    print(\"Hola\")",
+    "opciones": ["2", "3", "4", "Infinitas"],
+    "correcta": 1,
+    "pista": "range(3) genera 0, 1 y 2.",
+    "explicacion": "range(3) produce tres valores (0, 1 y 2), así que el ciclo se repite 3 veces."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "for i in range(1, 4):\n    print(i, end=\" \")",
+    "opciones": ["1 2 3", "1 2 3 4", "0 1 2 3", "0 1 2"],
+    "correcta": 0,
+    "pista": "El segundo número de range() no se incluye.",
+    "explicacion": "range(1, 4) empieza en 1 y termina antes del 4: imprime 1 2 3."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Qué método agrega un elemento al final de una lista?",
+    "codigo": "",
+    "opciones": [".add()", ".append()", ".insert()", ".push()"],
+    "correcta": 1,
+    "pista": "En inglés significa 'anexar'.",
+    "explicacion": "lista.append(valor) agrega el valor al final. insert() lo agrega en una posición específica."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "edad = 17\nif edad >= 18:\n    print(\"Adulto\")\nelse:\n    print(\"Menor\")",
+    "opciones": ["Adulto", "Menor", "No imprime nada", "Error"],
+    "correcta": 1,
+    "pista": "¿17 es mayor o igual que 18?",
+    "explicacion": "La condición 17 >= 18 es falsa, por eso se ejecuta el bloque else e imprime Menor."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "texto = \"Python\"\nprint(len(texto))",
+    "opciones": ["5", "6", "7", "Error"],
+    "correcta": 1,
+    "pista": "Cuenta las letras de la palabra.",
+    "explicacion": "len() devuelve la cantidad de caracteres: P-y-t-h-o-n son 6."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "texto = \"Python\"\nprint(texto[0:2])",
+    "opciones": ["Py", "Pyt", "P", "yt"],
+    "correcta": 0,
+    "pista": "El rebanado [inicio:fin] no incluye la posición fin.",
+    "explicacion": "texto[0:2] toma las posiciones 0 y 1, es decir 'Py'."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Qué operador compara si dos valores son iguales?",
+    "codigo": "",
+    "opciones": ["=", "==", "===", "=>"],
+    "correcta": 1,
+    "pista": "Un solo = sirve para asignar.",
+    "explicacion": "== compara y devuelve True o False. Un solo = asigna un valor a una variable."
+  },
+  {
+    "nivel": 2,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "x = 0\nwhile x < 3:\n    x += 1\nprint(x)",
+    "opciones": ["2", "3", "4", "Ciclo infinito"],
+    "correcta": 1,
+    "pista": "El ciclo se detiene cuando x deja de ser menor que 3.",
+    "explicacion": "x aumenta a 1, 2 y 3. Cuando vale 3 la condición x < 3 es falsa, sale del ciclo e imprime 3."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué palabra reservada se usa para definir una función?",
+    "codigo": "",
+    "opciones": ["func", "def", "function", "define"],
+    "correcta": 1,
+    "pista": "Son las primeras letras de 'define'.",
+    "explicacion": "Las funciones se definen con def, seguido del nombre, los paréntesis y dos puntos."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "def doble(n):\n    return n * 2\n\nprint(doble(4))",
+    "opciones": ["6", "8", "44", "None"],
+    "correcta": 1,
+    "pista": "n es un número, no un texto.",
+    "explicacion": "La función recibe 4 y devuelve 4 * 2 = 8. Si n fuera el texto '4', el resultado sería '44'."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "def saludar():\n    print(\"Hola\")\n\nr = saludar()\nprint(r)",
+    "opciones": ["Hola y luego None", "Hola", "None", "Error"],
+    "correcta": 0,
+    "pista": "La función imprime, pero ¿qué devuelve?",
+    "explicacion": "saludar() imprime Hola, pero no tiene return, así que devuelve None, que se guarda en r y se imprime."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "datos = {\"nombre\": \"Ana\", \"edad\": 30}\nprint(datos[\"edad\"])",
+    "opciones": ["nombre", "30", "edad", "Error"],
+    "correcta": 1,
+    "pista": "En un diccionario se busca por la clave.",
+    "explicacion": "datos[\"edad\"] devuelve el valor asociado a la clave 'edad', que es 30."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué ocurre al ejecutar este código?",
+    "codigo": "datos = {\"a\": 1}\nprint(datos[\"b\"])",
+    "opciones": ["Imprime None", "Imprime 0", "Lanza KeyError", "Imprime b"],
+    "correcta": 2,
+    "pista": "La clave 'b' no existe en el diccionario.",
+    "explicacion": "Pedir una clave que no existe lanza KeyError. Para evitarlo se puede usar datos.get(\"b\")."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué modo de open() agrega texto al final sin borrar el archivo?",
+    "codigo": "",
+    "opciones": ["\"r\"", "\"w\"", "\"a\"", "\"x\""],
+    "correcta": 2,
+    "pista": "Viene de 'append' (agregar).",
+    "explicacion": "El modo \"a\" agrega al final. \"w\" borra el contenido y \"r\" solo lee."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué bloque se usa para manejar errores en Python?",
+    "codigo": "",
+    "opciones": ["if / else", "try / except", "for / in", "with / as"],
+    "correcta": 1,
+    "pista": "Se 'intenta' algo y se 'atrapa' el error.",
+    "explicacion": "El código que puede fallar va en try; si ocurre un error, se ejecuta el bloque except."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "numeros = [3, 1, 2]\nnumeros.sort()\nprint(numeros)",
+    "opciones": ["[3, 1, 2]", "[1, 2, 3]", "[3, 2, 1]", "None"],
+    "correcta": 1,
+    "pista": "sort() modifica la misma lista.",
+    "explicacion": "sort() ordena la lista de menor a mayor directamente sobre la variable numeros."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "cuadrados = [n * n for n in range(4)]\nprint(cuadrados)",
+    "opciones": ["[1, 4, 9, 16]", "[0, 1, 4, 9]", "[0, 2, 4, 6]", "[1, 4, 9]"],
+    "correcta": 1,
+    "pista": "range(4) empieza en 0.",
+    "explicacion": "Es una lista por comprensión: eleva al cuadrado 0, 1, 2 y 3, y da [0, 1, 4, 9]."
+  },
+  {
+    "nivel": 3,
+    "pregunta": "¿Qué línea tiene un error de sintaxis?",
+    "codigo": "1  def saludar(nombre)\n2      print(\"Hola\", nombre)",
+    "opciones": ["Línea 1", "Línea 2", "Ninguna", "Ambas"],
+    "correcta": 0,
+    "pista": "Revisa el final de la línea donde se define la función.",
+    "explicacion": "A la línea 1 le faltan los dos puntos (:) al final de la definición de la función."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "En POO, ¿qué método se ejecuta automáticamente al crear un objeto?",
+    "codigo": "",
+    "opciones": ["__str__", "__init__", "__main__", "__del__"],
+    "correcta": 1,
+    "pista": "Viene de 'initialize' (inicializar).",
+    "explicacion": "__init__ es el constructor: inicializa los atributos del objeto al crearlo."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "¿Qué representa self dentro de los métodos de una clase?",
+    "codigo": "",
+    "opciones": ["La clase padre", "El objeto actual", "Una variable global", "El módulo"],
+    "correcta": 1,
+    "pista": "Significa 'sí mismo'.",
+    "explicacion": "self es una referencia al objeto que está usando el método; con él se accede a sus atributos."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "class Perro:\n    def __init__(self, nombre):\n        self.nombre = nombre\n\np = Perro(\"Toby\")\nprint(p.nombre)",
+    "opciones": ["Perro", "Toby", "nombre", "Error"],
+    "correcta": 1,
+    "pista": "Al crear el objeto se le pasa un nombre.",
+    "explicacion": "El constructor guarda \"Toby\" en el atributo nombre del objeto p."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "En POO, ¿qué es la herencia?",
+    "codigo": "",
+    "opciones": ["Una clase reutiliza otra", "Copiar un archivo", "Un tipo de ciclo", "Un error de sintaxis"],
+    "correcta": 0,
+    "pista": "Como hijos que heredan de sus padres.",
+    "explicacion": "Con herencia, una clase hija recibe los atributos y métodos de una clase padre, como class Jugador(pygame.sprite.Sprite)."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "a = [1, 2]\nb = a\nb.append(3)\nprint(a)",
+    "opciones": ["[1, 2]", "[1, 2, 3]", "[3]", "Error"],
+    "correcta": 1,
+    "pista": "b = a no crea una copia.",
+    "explicacion": "a y b apuntan a la misma lista; al modificar b también cambia a. Para copiar se usa a.copy()."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "En Pygame, ¿qué función actualiza lo que se ve en la ventana?",
+    "codigo": "",
+    "opciones": ["pygame.init()", "pygame.display.flip()", "pygame.quit()", "pygame.draw.rect()"],
+    "correcta": 1,
+    "pista": "Se llama al final de cada vuelta del ciclo principal.",
+    "explicacion": "pygame.display.flip() (o update()) muestra en pantalla todo lo que se dibujó en el ciclo."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "En Pygame, ¿para qué sirve reloj.tick(60)?",
+    "codigo": "",
+    "opciones": ["Limitar a 60 FPS", "Esperar 60 segundos", "Crear 60 sprites", "Sumar 60 puntos"],
+    "correcta": 0,
+    "pista": "Controla la velocidad del ciclo principal.",
+    "explicacion": "tick(60) hace que el ciclo no corra más de 60 veces por segundo (60 cuadros por segundo)."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "print(type(3 > 2))",
+    "opciones": ["<class 'int'>", "<class 'bool'>", "<class 'str'>", "True"],
+    "correcta": 1,
+    "pista": "Primero se evalúa la comparación y luego su tipo.",
+    "explicacion": "3 > 2 da True, y el tipo de True es bool. Por eso imprime <class 'bool'>."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "def sumar(*numeros):\n    return sum(numeros)\n\nprint(sumar(1, 2, 3))",
+    "opciones": ["6", "(1, 2, 3)", "123", "Error"],
+    "correcta": 0,
+    "pista": "*numeros agrupa todos los argumentos en una tupla.",
+    "explicacion": "*numeros recibe (1, 2, 3) como tupla y sum() suma sus elementos: 6."
+  },
+  {
+    "nivel": 4,
+    "pregunta": "¿Qué imprime este código?",
+    "codigo": "x = 10\n\ndef cambiar():\n    x = 5\n\ncambiar()\nprint(x)",
+    "opciones": ["5", "10", "None", "Error"],
+    "correcta": 1,
+    "pista": "La x de adentro de la función es local.",
+    "explicacion": "Dentro de la función se crea una x local; la x global sigue valiendo 10. Para cambiarla se usaría global x."
+  }
+]

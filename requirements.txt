@@ -1,0 +1,4 @@
+pygame-ce
+pyttsx3
+SpeechRecognition
+sounddevice
