@@ -107,8 +107,10 @@ pip install -r requirements.txt
 |---|---|---|
 | `pygame-ce` (o `pygame`) | Ventana, gráficos, sonido | Sí |
 | `pyttsx3` | Leer en voz alta | No: sin ella el juego funciona sin voz |
-| `SpeechRecognition` | Reconocer la voz (necesita internet) | No: sin ella se responde con teclado |
+| `SpeechRecognition` | Reconocer la voz (necesita internet, ver *Privacidad*) | No: sin ella se responde con teclado |
 | `sounddevice` | Grabar el micrófono | No |
+
+**Privacidad:** al responder por voz (tecla **V**), el audio grabado se envía al servicio de reconocimiento de voz de Google (`recognize_google`) para convertirlo en texto. Solo se graba mientras el juego escucha (unos segundos tras pulsar V). Si no quieres enviar audio, responde con el teclado o el ratón.
 
 **Nota sobre PyAudio:** el asistente del curso usa PyAudio para el micrófono, pero en Python 3.14 no se puede instalar sin el compilador de C++. Por eso el juego usa **sounddevice** como alternativa. Si PyAudio está instalado, se usa PyAudio, igual que en el asistente del curso.
 
