@@ -155,7 +155,7 @@ class Partida:
             i for i in range(len(pregunta.opciones))
             if i != pregunta.correcta and i not in self.eliminadas
         ]
-        eliminada = random.choice(incorrectas)
+        eliminada = random.choice(incorrectas)  # removes a wrong answer for a lifeline, not cryptography  # nosec B311
         self.eliminadas.append(eliminada)
         self.comodines["depurar"] = False
         return eliminada

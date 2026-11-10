@@ -160,7 +160,7 @@ class BancoPreguntas:
         """
         escalera = []
         for nivel in range(1, len(RANGOS) + 1):
-            elegidas = random.sample(self.por_nivel(nivel), PREGUNTAS_POR_RANGO)
+            elegidas = random.sample(self.por_nivel(nivel), PREGUNTAS_POR_RANGO)  # picks quiz questions, not cryptography  # nosec B311
             escalera.extend(p.mezclada() for p in elegidas)
         return escalera
 
@@ -184,5 +184,5 @@ class BancoPreguntas:
         ]
         if not candidatas:
             return None
-        return random.choice(candidatas).mezclada()
+        return random.choice(candidatas).mezclada()  # picks a replacement question, not cryptography  # nosec B311
 #endregion
