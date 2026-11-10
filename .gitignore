@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 venv/
 .vscode/
+
+# Player history: personal data, regenerated on every game
+recursos/historial.csv
